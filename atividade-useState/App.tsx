@@ -1,11 +1,11 @@
 import { Text, View, TextInput, FlatList, TouchableOpacity } from "react-native";
-import { styles } from "./styles/styles";
+import { styles } from "./styles";
 import React, { useState } from "react";
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import ProdutoItem from "./components/ProdutoItem"; // import do componente separado
+import { MaterialIcons } from "@expo/vector-icons";
+import ProdutoItem from "./components/ProdutoItem";
 
 export default function App() {
-  const [produtos, setProdutos] = useState(["Maça", "Banana", "Melancia"]);
+  const [produtos, setProdutos] = useState(["Maça", "Banana", "Melancia", "Uva"]);
   const [produtoAdd, setProdutoAdd] = useState("");
 
   function adicionarProduto() {
