@@ -68,7 +68,16 @@ export const styles = StyleSheet.create({
     height: "auto",
     display: "flex",
     flexWrap: "wrap",
-  }
+  },
+
+  buttonRemoveAll: {
+    backgroundColor: "white",
+    cursor: 'pointer',
+    marginTop: 15,
+    padding: 10,
+    borderRadius: 10,
+    textAlign: "center",
+  },
 });
 
 

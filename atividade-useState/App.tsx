@@ -1,4 +1,4 @@
-import { Text, View, TextInput, FlatList, TouchableOpacity } from "react-native";
+import { Text, View, TextInput, FlatList, TouchableOpacity, Button } from "react-native";
 import { styles } from "./styles";
 import React, { useState } from "react";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -17,6 +17,10 @@ export default function App() {
   function retirarProduto(produto: string) {
     let lista = produtos.filter((item) => item !== produto);
     setProdutos(lista);
+  }
+
+  function retirarTudo() {
+    setProdutos(['']);
   }
 
   return (
@@ -52,6 +56,7 @@ export default function App() {
           </View>
         }
       />
+      <Text style={styles.buttonRemoveAll} onPress={retirarTudo}>Apagar tudo</Text>
     </View>
   );
 }
