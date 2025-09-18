@@ -2,17 +2,27 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        marginTop: 30,
         backgroundColor: '#161616ff',
-        padding: 20
+        display: 'flex',
+        height: "auto",
+        width: "100%",
+        flexDirection: "row",
     },
     input:{
         flex: 1,
+        backgroundColor: '#0c0c0cff',
+        padding: 15,
+        borderRadius: 15,
+        color: "white",
     },
     button:{
-        flex: 1,
+        backgroundColor: '#0c0c0cff',
+        padding: 15,
+        borderRadius: 15,
+        marginLeft: 5,
     },
     buttonText: {
-        flex: 1,
+        color: "white"
     },
 })

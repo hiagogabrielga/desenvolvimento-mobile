@@ -12,12 +12,12 @@ export function Input({placeH, onChangeText, onPress, value}:Props){
             <TextInput
                 style={styles.input}
                 placeholder={placeH}
-                placeholderTextColor={"#fff"}
+                placeholderTextColor={"#ffffff46"}
                 onChangeText={onChangeText}
                 value={value}
             />
             <TouchableOpacity style={styles.button} onPress={onPress}>
-                <Text style={styles.buttonText}><AntDesign name="plus-circle" size={24} color="white" /></Text>
+                <Text style={styles.buttonText}><AntDesign name="plus-circle" size={30} /></Text>
             </TouchableOpacity>
         </View>
     
